@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        
+          
+        <title>VIRTUAL CLASS</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <script>
+          function myCanvas(a) {
+            var c = document.getElementById("myCanvas");
+  
+            var ctx = c.getContext("2d");
+     
+            var img = document.getElementById(a);
+            ctx.drawImage(img, 0,0);
+          
+      
+  ctx.clearRect();
+  
+  
+          }
+          </script>
+
+         
+    </head>
+    <br>
+    <br>
+    <body>
+        <header>
+            <h1>LIVE VIRTUAL CLASS</h1>
+        
+        
+            <nav>
+                <ul class="list-inline">
+                    
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="all_course.html">ALL COURSE</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="registration.html">REGISTRATION</a></li>
+                    <li><a href="Contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </header>
+            <br>
+            <section>
+                <aside>
+                    WHAT WE DO ?
+                    <br><br><br>
+                    <iframe width="100%" height="70%" src="https://www.youtube.com/embed/-RiiXVUrAdc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </aside>
+             <article>
+              <div class="gallery">
+                <a target="_blank" href="MEDIA\images (1).jfif">
+                  <img id="1" src="MEDIA\images (1).jfif" alt="bird" width="600" height="400">
+                </a>
+                <div class="descs">description of the image here</div>
+                <p><button onclick="myCanvas('1')">Try it</button></p>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="MEDIA\download.jfif">
+                  <img id="2" src="MEDIA\download.jfif" alt="bird" width="600" height="400">
+                </a>
+                <div class="desc"> description of the image here</div>
+                <p><button onclick="myCanvas('2')">Try it</button></p>
+              </div>
+              
+              <div class="gallery">
+                <a target="_blank" href="MEDIA\images.jfif">
+                  <img id="3" src="MEDIA\images.jfif" alt="bird" width="600" height="400">
+                </a>
+                <div class="desc">description of the image here</div>
+                <p><button onclick="myCanvas('3')">Try it</button></p>
+              </div>
+              
+              <p>Select your fav picture:</p>
+              <canvas id="myCanvas" width="350" height="300"
+              style="border:1px solid #d3d3d3;">
+              
+             
+        </section>
+        
+        <footer>
+            © copyright reserved 2020
+
+        </footer>
+
+    </body>
+</html>
