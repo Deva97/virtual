@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        
+        <a id="head1" href="index.html" onmouseover="onmouse()" onmouseout="outmouse()">STUDENT REGISTRATION</a>
+        <title>Student Detail</title>
+        <style>
+            h1{color: burlywood;}
+            table{
+                border: 1px solid black;
+            }
+        </style>
+        <title>VIRTUAL CLASS</title>
+        <link rel="stylesheet" href="CSS/style.css">
+         <script src="JS/valid.js"></script>
+
+         
+    </head>
+    <br>
+    <br>
+    <body>
+        <header>
+            <h1>LIVE VIRTUAL CLASS</h1>
+        
+        
+            <nav>
+                <ul class="list-inline">
+                    
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="all_course.html">ALL COURSE</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="registration.html">REGISTRATION</a></li>
+                    <li><a href="Contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </header>
+            <br>
+            <section>
+                <aside>
+                    WHAT WE DO ?
+                    <br><br><br>
+                    <iframe width="100%" height="70%" src="https://www.youtube.com/embed/-RiiXVUrAdc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </aside>
+             <article>
+                <table align="center" >
+                    <tr>
+                        <td>Registration no</td>
+                        <td><input id="0" type="number" onfocus="move()"> </td>
+                    </tr>
+                    <tr>
+                    <th>Enter Marks</th>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td><input type="number" id="1" required max=100 min=0 onblur="pre(1)"></td>
+                    <td>GK</td>
+                    <td><input type="number" id="2" required max=100 min=0 onblur="pre(2)"></td>
+                    <td>Mathematics</td>
+                    <td><input type="number" id="3" required max=100 min=0 onblur="pre(3)"></td>
+                </tr>
+                <tr>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>Total Marks</td>
+                    <td><input type="number" id="res1" readonly></td>
+                    <td>Percentage</td>
+                    <td><input type="number" id="res2" readonly></td>
+                    <td>Highest marks</td>
+                    <td><input type="number" id="res3" value=0 onchange="regis()" ></td>
+                </tr>
+                <tr>
+                   <td> <input type="submit" onclick="validform()"></td>
+                </tr>
+                    </table>
+             
+        </section>
+        
+        <footer>
+            © copyright reserved 2020
+
+        </footer>
+
+    </body>
+</html>
